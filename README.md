@@ -89,9 +89,14 @@
             - git push heroku master
         - Rename App
             - heroku rename rails-sujit
+### Ruby On Rails: Development: Persistence Layer
+     - Scaffold Generator: one line command to generate CRUD operation     
+        - rails generate scaffold Article title:string description: text
+        - This will
+            - Update routes.rb to make etry for CRUD operations
+            - generate ArticleController  
+            - genererate view HTMLs   
+        -  To generate DB: 
+            - rake db:migrate
+        - Start rails server: rails server
             
-        
-        
-        
-        
-    
