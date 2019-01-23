@@ -73,7 +73,24 @@
         - Check: heroku -v
     - Login to Heroku: 
         - heroku login -i (For entering email/pwd on terminal) 
-        - heroku login (To enter email/pwd in browser)         
+        - heroku login (To enter email/pwd in browser)  
+    - Create an application in Heroku for Local application (Production version)
+        - Goto prject directory and run: 
+            - heroku create       
+        - Creates the application and gives random name to it
+            - eg: https://polar-tundra-21539.herokuapp.com/ | https://git.heroku.com/polar-tundra-21539.git 
+            - We will push our application to heroku
+        - Make sure you push the changes to git before pushing app to heroku
+        - Add SSH Key of local environment to Heroku so that we dont have to enter id/pwd for each git push
+            - heroku keys:add
+            - ssh-add -l
+            - To add RSA key: ssh-add id_rsa
+        - Pushing application to production in heroku
+            - git push heroku master
+        - Rename App
+            - heroku rename rails-sujit
+            
+        
         
         
         
